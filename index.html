@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Themed Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header section -->
+    <header>
+        <div id="logo">
+            <img src="images/cricket-logo.png" alt="Cricket-log">
+        </div>
+        <nav id="nav-bar">
+            <ul>
+                <li><a href="#teams">Teams</a></li>
+                <li><a href="#matches">Matches</a></li>
+                <li><a href="#registration">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Content section -->
+    <h2>Knock your bats and shine your balls</h2>
+    <h3>Time to compete</h3>
+
+    <!-- Teams section -->
+    <div id="teams">
+        <div id="team1">
+            <h2>Champs</h2>
+            <img src="images/team-1-logo.jpg" alt="team-1-logo">
+        </div>
+        <button onclick="document.getElementById('registration').scrollIntoView()">Join team</button>
+        <div id="team2">
+            <h2>Sports Club 82</h2>
+            <img src="images/team-2-logo.jpg" alt="team-2-logo">
+        </div>
+    </div>
+
+    <!-- Upcoming matches section -->
+    <div id="matches">
+        <h2>Upcoming Matches</h2>
+        <h2>Champs vs Sports Club 82 on 30 September</h2>
+    </div>
+
+    <!-- Multi-Stage Registration form -->
+    <div id="registration">
+        <form id="multi-stage-form">
+            <!-- Step 1: Name -->
+            <div class="form-step" id="step-1">
+                <label for="user-name">Enter your name</label>
+                <input type="text" required id="user-name" name="user-name" placeholder="e.g. Ram Kumar">
+                <button type="button" onclick="nextStep(1)">Next</button>
+            </div>
+
+            <!-- Step 2: Email -->
+            <div class="form-step" id="step-2" style="display:none;">
+                <label for="user-email">Enter your email</label>
+                <input type="email" name="user-email" id="user-email" required placeholder="e.g. ramkumar123@gmail.com">
+                <button type="button" onclick="previousStep(2)">Previous</button>
+                <button type="button" onclick="nextStep(2)">Next</button>
+            </div>
+
+            <!-- Step 3: Team Selection -->
+            <div class="form-step" id="step-3" style="display:none;">
+                <label for="select-team">Join your team</label>
+                <select name="select-team" id="select-team" required>
+                    <option value="team1">Champs</option>
+                    <option value="team2">Sports Club 82</option>
+                </select>
+                <button type="button" onclick="previousStep(3)">Previous</button>
+                <button type="submit">Confirm</button>
+            </div>
+
+    </div>
+    </form>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>Cricket Theme Website © 2024</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

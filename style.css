@@ -1,0 +1,214 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9fafb;
+    color: #333;
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+}
+
+/* Header/Nav Bar */
+header {
+    background-color: #0275d8;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+#logo img {
+    height: 50px;
+}
+
+#nav-bar ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+#nav-bar ul li {
+    margin: 0;
+}
+
+#nav-bar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+#nav-bar ul li a:hover {
+    color: #f0ad4e;
+}
+
+/* Responsive Header */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #nav-bar ul {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+}
+
+/* Main Heading */
+h2, h3 {
+    text-align: center;
+    margin: 20px 0;
+    color: #0275d8;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+    color: #5bc0de;
+}
+
+/* Teams Section */
+#teams {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 40px 0;
+    flex-wrap: wrap;
+}
+
+#teams div {
+    flex-basis: 45%;
+    text-align: center;
+    margin: 10px 0;
+}
+
+#teams img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#teams img:hover {
+    transform: scale(1.25);
+}
+
+#teams button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+#teams button:hover {
+    background-color: #449d44;
+}
+
+/* Matches Section */
+#matches {
+    text-align: center;
+    margin: 40px 0;
+}
+
+#matches h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #5bc0de;
+}
+
+/* Registration Form */
+#registration {
+    background-color: white;
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#registration form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#registration form label {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+#registration form input,
+#registration form select {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#registration form button {
+    padding: 12px;
+    background-color: #0275d8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#registration form button:hover {
+    background-color: #025aa5;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+    color: #777;
+    margin-top: 40px;
+    border-top: 1px solid #e9ecef;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    #teams {
+        flex-direction: column;
+    }
+
+    #registration {
+        padding: 20px;
+        width: 90%;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+}
