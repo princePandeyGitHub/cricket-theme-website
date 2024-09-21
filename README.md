@@ -15,4 +15,4 @@ Add a commit message and click on "Commit changes" to save the uploaded files. E
 
 Go to the "Settings" tab of your repository. Scroll down to the "GitHub Pages" section. Under "Source," select the main branch and click "Save" (if you want to host your site). Access your live site:
 
-After a few minutes, your site will be live at https://yourusername.github.io/cricket-themed-website/. Usage Navigate through the website using the navigation bar. View team details and upcoming matches. Use the registration form to sign up for your preferred team. Contributing Contributions are welcome! If you have suggestions for improvements or features, please fork the repository and submit a pull request.
+After a few minutes, your site will be live at https://princepandeygithub.github.io/cricket-theme-website/. Usage Navigate through the website using the navigation bar. View team details and upcoming matches. Use the registration form to sign up for your preferred team. Contributing Contributions are welcome! If you have suggestions for improvements or features, please fork the repository and submit a pull request.
